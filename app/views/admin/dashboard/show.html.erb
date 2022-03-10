@@ -1,2 +1,12 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1 class="display-1">Dashboard</h1>
+
+<ul class="list-group">
+  <li class="list-group-item">  
+    <a class="btn btn-primary btn-dashboard" href="/admin/products" role="button">Product Manager</a>
+    <span>The database currently contains <strong><%= @product_count %></strong> products.</span>
+  </li>
+  <li class="list-group-item">
+    <a class="btn btn-danger btn-dashboard" href="#" role="button">Category Manager</a>
+    The products are divided into <strong><%= @category_count %></strong> categories.
+  </li>
+</ul>
