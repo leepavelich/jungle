@@ -19,7 +19,7 @@ RSpec.describe User, type: :model do
 
     it "is not valid without a password" do
       @user.password = nil
-      
+
       expect(@user).to_not be_valid
     end
 
@@ -80,6 +80,48 @@ RSpec.describe User, type: :model do
   end
 
   describe '.authenticate_with_credentials' do
-    # examples for this class method here
+
+    before(:each) do
+      @user = User.new do |u|
+        u.email = "test@test.com"
+        u.first_name = "First"
+        u.last_name = "Last"
+        u.password = "password"
+        u.password_confirmation = "password"
+      end
+      @user.save
+    end
+
+    it "should not be nil with valid email and password" do
+      user = User.authenticate_with_credentials("test@test.com", "password")
+
+      expect(user).to_not be(nil)
+    end
+
+    it "should be nil with invalid email" do 
+      user = User.authenticate_with_credentials("error", "password")
+
+      expect(user).to be(nil)
+    end
+
+    it "should be nil with invalid password" do 
+      user = User.authenticate_with_credentials("test@test.com", "error")
+      
+      expect(user).to be(nil)
+    end
+
+    it "should ignore whitespace padding on email" do
+      email = "     test@test.com    "
+      user = User.authenticate_with_credentials(email, "password")
+
+      expect(user).to_not be(nil)
+    end
+
+    it "should ignore case sensitivity in the email" do
+      email = "TeST@test.COM"
+      user = User.authenticate_with_credentials(email, "password")
+
+      expect(user).to_not be(nil)
+    end
   end
 end
