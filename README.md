@@ -11,11 +11,35 @@ I was given an existing code base with little guidance and asked to implement th
 3. User login and authentication
 4. An order details page when an order is successfully submitted
 5. Added automated testing and validation for large parts of the codebase
+6. An "About Us" page
 
 ### Bug Fixes
 
 1. HTTP auth login/password for accessing admin functionality
 2. Preventing user from checking out with an empty cart
+
+## Screenshots
+
+Product index
+![Main app](https://github.com/leepavelich/jungle/blob/master/docs/main-app.png?raw=true)
+
+New user registration
+![User Registration](https://github.com/leepavelich/jungle/blob/master/docs/user-signup.png?raw=true)
+
+Logged-in user can add items to their cart
+![Adding items to cart](https://github.com/leepavelich/jungle/blob/master/docs/adding-to-cart.png?raw=true)
+
+Cart shows user's items along with price total, and quantities can be adjusted
+![My Cart](https://github.com/leepavelich/jungle/blob/master/docs/my-cart.png?raw=true)
+
+Order details page after successful checkout
+![Checkout](https://github.com/leepavelich/jungle/blob/master/docs/order-details.png?raw=true)
+
+HTTP authorization for access to admin-only pages
+![HTTP auth](https://github.com/leepavelich/jungle/blob/master/docs/http-auth.png?raw=true)
+
+Admin page for categories where new categories can be added
+![Admin Categories](https://github.com/leepavelich/jungle/blob/master/docs/admin-categories.png?raw=true)
 
 ## Setup
 
