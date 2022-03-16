@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for your order, <%= @order.email %></h1>
+    <p>
+      Your order #<%= @order.id %> was successfully placed with Jungle.<br>
+    </p>
+    <h2>Order List</h2>
+    <p>
+      <%= render 'order' %>
+    </p>
+    <p>Thank you for purchasing from Jungle and we hope you shop with us again.</p>
+    <p>Sincerely,</p>
+    <p> The Jungle Team</p>
+  </body>
+</html>
