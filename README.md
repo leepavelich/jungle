@@ -35,6 +35,9 @@ Cart shows user's items along with price total, and quantities can be adjusted
 Order details page after successful checkout with the Stripe API
 ![Checkout](https://github.com/leepavelich/jungle/blob/master/docs/order-details.png?raw=true)
 
+Preview of email receipt on successful order submission
+![Email receipt](https://github.com/leepavelich/jungle/blob/master/docs/email-receipt.png?raw=true)
+
 HTTP authorization for access to admin-only pages
 ![HTTP auth](https://github.com/leepavelich/jungle/blob/master/docs/http-auth.png?raw=true)
 
