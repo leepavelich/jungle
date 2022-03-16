@@ -32,7 +32,7 @@ Logged-in user can add items to their cart
 Cart shows user's items along with price total, and quantities can be adjusted
 ![My Cart](https://github.com/leepavelich/jungle/blob/master/docs/my-cart.png?raw=true)
 
-Order details page after successful checkout
+Order details page after successful checkout with the Stripe API
 ![Checkout](https://github.com/leepavelich/jungle/blob/master/docs/order-details.png?raw=true)
 
 HTTP authorization for access to admin-only pages
