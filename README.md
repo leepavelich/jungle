@@ -12,6 +12,7 @@ I was given an existing code base with little guidance and asked to implement th
 4. An order details page when an order is successfully submitted
 5. Added automated testing and validation for large parts of the codebase
 6. An "About Us" page
+7. User is sent an email receipt on successful order submission
 
 ### Bug Fixes
 
