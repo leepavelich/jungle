@@ -44,16 +44,19 @@
     <div class="row">
       <hr>
       <h3 class="review-header">Reviews:</h3>
-        <% if @reviews.size > 0 %>
+        <% if @reviews.size.positive? %>
           <% @reviews.each do |review| %>
-            <dd><strong>Name:  </strong> <%= "#{review.user.first_name} #{review.user.last_name}" %></dd>
-            <dd><strong>Rating:</strong> <%= review.rating %> / 5</dd>
+            <% if current_user == User.find(review.user_id) %>
+              <%= link_to 'Delete Your Review', product_review_path(review.product_id, review.id), method: :delete, class: 'btn btn-danger btn-xs' %>
+            <% end %>
+            <div class=""><%= "#{review.user.first_name} #{review.user.last_name}" %></div>
+            <dd><strong>Rating: </strong><%= review.rating %>/5</dd>
             <br>
             <dd><%= review.description %></dd>
             <hr>
-            <% end %>
-        <% else @reviews.size == 0 %>
-          <h4>There are no reviews yet.</h4>
+          <% end %>
+        <% else @reviews.size.nil? %>
+          <dd>There are no reviews yet.</dd>
         <% end %>
   </article>
 

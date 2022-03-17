@@ -39,6 +39,12 @@ Order details page after successful checkout with the Stripe API
 Preview of email receipt on successful order submission
 ![Email receipt](https://github.com/leepavelich/jungle/blob/master/docs/email-receipt.png?raw=true)
 
+Users can leave ratings on individual products
+![Reviews]()
+
+Logged-in users can delete their own review
+![Review Deletion]()
+
 HTTP authorization for access to admin-only pages
 ![HTTP auth](https://github.com/leepavelich/jungle/blob/master/docs/http-auth.png?raw=true)
 
