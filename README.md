@@ -13,6 +13,7 @@ I was given an existing code base with little guidance and asked to implement th
 5. Added automated testing and validation for large parts of the codebase
 6. An "About Us" page
 7. User is sent an email receipt on successful order submission
+8. Users can leave reviews on individual products, and logged-in users can delete their own reviews
 
 ### Bug Fixes
 
