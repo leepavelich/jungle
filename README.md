@@ -56,7 +56,7 @@ Admin page for categories where new categories can be added
 
 ### Front-end
 
-- [Embedded Ruby](https://ruby-doc.org/stdlib-1.9.3/libdoc/erb/rdoc/ERB.html
+- [Embedded Ruby](https://ruby-doc.org/stdlib-1.9.3/libdoc/erb/rdoc/ERB.html)
 
 ### Back-end
 
