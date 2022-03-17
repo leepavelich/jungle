@@ -61,7 +61,7 @@ Admin page for categories where new categories can be added
 ### Back-end
 
 - [Rails](https://rubyonrails.org/)
-- [PostreSQL](https://www.postgresql.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ### Testing
 
