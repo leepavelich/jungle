@@ -52,6 +52,23 @@ HTTP authorization for access to admin-only pages
 Admin page for categories where new categories can be added
 ![Admin Categories](https://github.com/leepavelich/jungle/blob/master/docs/admin-categories.png?raw=true)
 
+## Tech Stack
+
+### Front-end
+
+- [Embedded Ruby](https://ruby-doc.org/stdlib-1.9.3/libdoc/erb/rdoc/ERB.html
+
+### Back-end
+
+- [Rails](https://rubyonrails.org/)
+- [PostreSQL](https://www.postgresql.org/)
+
+### Testing
+
+- [RSpec](https://rspec.info/)
+- [Capybara](https://github.com/teamcapybara/capybara)
+- [Poltergeist](https://github.com/teampoltergeist/poltergeist)
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
