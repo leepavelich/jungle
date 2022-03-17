@@ -26,6 +26,35 @@
       </div>
     </div>
 
+    <div class="row">
+      <h3 class="review-header">Write a Review</h3>
+        <%= form_for [@product, @review], url: `/products/#{@product.id}/reviews` do |f| %>
+          <div class="form-group">
+            <%= f.select :rating, (1..5).to_a, :prompt => "Rating", :required => true, class: "form-select" %>
+          </div>
+          <div class="form-group">
+            <%= f.text_area :description, :required => true, class: "form-control", placeholder: "Leave a review" %>
+          </div>
+          <div class="form-group">
+            <%= f.submit "Submit Review", class: "btn btn-primary" %>
+          </div>
+        <% end %>
+    </div>
+
+    <div class="row">
+      <hr>
+      <h3 class="review-header">Reviews:</h3>
+        <% if @reviews.size > 0 %>
+          <% @reviews.each do |review| %>
+            <dd><strong>Name:  </strong> <%= "#{review.user.first_name} #{review.user.last_name}" %></dd>
+            <dd><strong>Rating:</strong> <%= review.rating %> / 5</dd>
+            <br>
+            <dd><%= review.description %></dd>
+            <hr>
+            <% end %>
+        <% else @reviews.size == 0 %>
+          <h4>There are no reviews yet.</h4>
+        <% end %>
   </article>
 
 </section>

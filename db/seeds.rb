@@ -132,5 +132,25 @@ cat3.products.create!({
   price: 2_483.75
 })
 
+## USERS
+User.destroy_all
+user1 = User.create!({
+  email: "test@testmail.com",
+  first_name: "Bob",
+  last_name: "Blakensfield",
+  password: "password",
+  password_confirmation: "password"
+})
+
+## REVIEWS
+
+prod1 = Product.find_by id: 1
+
+prod1.reviews.create!({
+  description: "A so-so product",
+  rating: 3,
+  user_id: user1.id
+})
+
 
 puts "DONE!"
