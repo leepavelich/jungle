@@ -40,10 +40,10 @@ Preview of email receipt on successful order submission
 ![Email receipt](https://github.com/leepavelich/jungle/blob/master/docs/email-receipt.png?raw=true)
 
 Users can leave ratings on individual products
-![Reviews]()
+![Reviews](https://github.com/leepavelich/jungle/blob/master/docs/reviews.png?raw=true)
 
 Logged-in users can delete their own review
-![Review Deletion]()
+![Review Deletion](https://github.com/leepavelich/jungle/blob/master/docs/reviews-2.png?raw=true)
 
 HTTP authorization for access to admin-only pages
 ![HTTP auth](https://github.com/leepavelich/jungle/blob/master/docs/http-auth.png?raw=true)
