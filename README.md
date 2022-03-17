@@ -42,7 +42,7 @@ Preview of email receipt on successful order submission
 Users can leave ratings on individual products
 ![Reviews](https://github.com/leepavelich/jungle/blob/master/docs/reviews.png?raw=true)
 
-Logged-in users can delete their own review
+Logged-in users can delete their own reviews
 ![Review Deletion](https://github.com/leepavelich/jungle/blob/master/docs/reviews-2.png?raw=true)
 
 HTTP authorization for access to admin-only pages
